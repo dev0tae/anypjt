@@ -18,15 +18,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserEntity registerUser(UserDto userDto) {
     	
-    	userDto.setNickname("zz");
-    	userDto.setUserEmail("sdfsdf");
-    	userDto.setUserPw("sadkfjsㅁㄴㅇdakk");
-    	
-        UserEntity user = new UserEntity();
+    	UserEntity user = new UserEntity();
         
         // 성능적으로 좋지 않음
-        // BeanUtils.copyProperties(userDto, user);
-        
+        // BeanUtils.copyProperties(userDto, user);        
         user.setNickname(userDto.getNickname());
         user.setUserEmail(userDto.getUserEmail());
         user.setUserPw(userDto.getUserPw());

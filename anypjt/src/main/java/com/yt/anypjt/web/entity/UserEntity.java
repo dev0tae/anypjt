@@ -37,7 +37,7 @@ public class UserEntity extends BaseEntity{
 	 * 만약, INSERT 후에 생성된 키를 확인하려고 하면 추가적인 SELECT 쿼리를 수행해서 키 값을 찾아야 한다. 
 	 * 때문에 대용량 데이터를 다룰 때에는 적합하지 않아 SEQUENCE로 처리해야 한다.
 	 * UUID는 보안에 강하지만 다량의 INSERT 상황이 일어나게 되면 성능 저하의 이슈가 있다.
-	 * 상황에 맞게 판단해야 함.
+	 * 상황에 맞게 판단해야 함.*
 	 */
 		
 	@Id  
