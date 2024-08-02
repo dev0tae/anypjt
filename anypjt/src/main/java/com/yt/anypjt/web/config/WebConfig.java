@@ -1,4 +1,4 @@
-package com.yt.anypjt.config;
+package com.yt.anypjt.web.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
