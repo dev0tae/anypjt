@@ -30,17 +30,6 @@ public class UserServiceImpl implements UserService {
                 throw new IllegalArgumentException("UserDto cannot be null");
             }
 
-            /*이메일 중복 검사는 front에서 실시간으로.
-            if (userRepository.existsByUserEmail(userDto.getUserEmail())) {
-                throw new IllegalArgumentException("Email is already in use");
-            }
-
-            // 닉네임 중복 검사
-            if (userRepository.existsByNickname(userDto.getNickname())) {
-                throw new IllegalArgumentException("이미 사용 중인 닉네임입니다.");
-            }
-            */
-
             UserEntity user = new UserEntity();
             
             // 성능적으로 좋지 않음

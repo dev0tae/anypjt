@@ -13,7 +13,7 @@ public interface UserService {
     UserEntity registerUser(UserDto userDto);
     
     /**
-     * 
+     * 닉네임 중복 검사 
      * @param nickname
      * @return true if nickname exists, false otherwise
      */
@@ -21,7 +21,7 @@ public interface UserService {
     
 
     /**
-     * 
+     * 이메일 중복 검사
      * @param nickname
      * @return true if userEmail exists, false otherwise
      */
