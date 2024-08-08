@@ -12,4 +12,21 @@ public interface UserService {
 	 */
     UserEntity registerUser(UserDto userDto);
     
+    /**
+     * 
+     * @param nickname
+     * @return true if nickname exists, false otherwise
+     */
+    boolean isNicknameTaken(String nickname);
+    
+
+    /**
+     * 
+     * @param nickname
+     * @return true if userEmail exists, false otherwise
+     */
+    boolean isUserEmailTaken(String userEmail);
+    
+    
+    
 }
